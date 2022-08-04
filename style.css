@@ -2,10 +2,13 @@
   font-size: 62.5%;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
 body {
   font-size: 1.6rem;
   margin: 7rem 8rem;
   color: #555555;
+  font-family: "Inter", sans-serif;
 }
 
 .header {
@@ -31,4 +34,54 @@ a {
 
 ul li:last-child a {
   color: #ff3998;
+}
+
+/* NAVIGATION SECTION */
+
+.hero {
+  margin-top: 18.2rem;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin-right: 24rem;
+}
+
+.hero__left {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1 / 8;
+}
+
+.hero__right {
+  grid-column: 8 / 13;
+  position: relative;
+}
+
+.hero__right img {
+  position: relative;
+  top: -15rem;
+  right: 1rem;
+}
+
+.hero__left h2 {
+  font-size: 1.6rem;
+  color: #ff3998;
+  margin-bottom: 2.4rem;
+}
+
+.hero__left h1 {
+  font-size: 9.6rem;
+  color: #111111;
+  margin-bottom: 3.2rem;
+  font-style: normal;
+  font-weight: 900;
+}
+
+.hero__left p {
+  font-size: 2rem;
+  margin-bottom: 4rem;
+}
+
+.hero__left button {
+  align-self: flex-start;
+  padding: 2.2rem 5.6rem;
 }
