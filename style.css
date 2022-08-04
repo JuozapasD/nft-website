@@ -4,4 +4,31 @@
 
 body {
   font-size: 1.6rem;
+  margin: 7rem 8rem;
+  color: #555555;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav__links {
+  display: flex;
+  font-size: 2rem;
+  gap: 2.8rem;
+}
+
+a {
+  text-decoration: none;
+  color: #555555;
+}
+
+ul li:last-child a {
+  color: #ff3998;
 }
