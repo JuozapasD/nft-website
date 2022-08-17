@@ -326,3 +326,149 @@ footer {
   color: #999999;
   font-size: 2rem;
 }
+
+.hero__right img {
+  display: none;
+}
+
+.burger {
+  display: none;
+}
+
+.robot__image {
+  display: none;
+}
+
+@media only screen and (max-width: 1150px) {
+  .showcase__cards {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: normal;
+  }
+
+  .showcase__cards-first {
+    flex: 0 0 auto;
+  }
+
+  .hero {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 775px) {
+  body {
+    margin: 0;
+  }
+  .nav {
+    display: none;
+  }
+
+  .header {
+    align-items: center;
+    margin: 3.2rem;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .hero {
+    margin-top: 8rem;
+    margin-left: 3.2rem;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero__left {
+    grid-column: 1 / 2;
+  }
+
+  .hero__left h4 {
+    font-size: 4.8rem;
+  }
+
+  .hero__left p {
+    line-height: 150%;
+    font-size: 2rem;
+  }
+
+  .hero__right-wrapper {
+    overflow: hidden;
+  }
+
+  .hero__right {
+    grid-column: 2 / 3;
+    background-image: none;
+    display: block;
+    width: 100%;
+    scale: 1;
+  }
+
+  .hero__right img {
+    display: block;
+    scale: 1;
+    width: 100%;
+    z-index: -99;
+    overflow: hidden;
+    clip: rect(0px, 50px, 50px, 0px);
+  }
+
+  .orange {
+    height: 32.6rem;
+    border-radius: 0px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 8rem;
+  }
+
+  .press {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 6.4rem 3.2rem 5.6rem 3.2rem;
+  }
+
+  .orange h2 {
+    padding: 12.2rem 3.2rem 1.6rem 3.2rem;
+  }
+
+  .orange p {
+    padding: 0 3.2rem 3.2rem 3.2rem;
+  }
+
+  .press a:first-child {
+    display: none;
+  }
+
+  hr {
+    margin: 9.2rem 0 6.4rem 0;
+  }
+
+  .showcase {
+    margin-left: 3.2rem;
+  }
+
+  .upsell {
+    margin-left: 3.2rem;
+  }
+
+  .upsell__left p {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 150%;
+  }
+
+  .hero__right-bottom {
+    align-self: flex-end;
+  }
+
+  footer {
+    grid-template-columns: 1fr;
+    margin-left: 3.2rem;
+    gap: 6.4rem;
+  }
+
+  .footer__rigth-wrapper {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+}
