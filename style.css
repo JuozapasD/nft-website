@@ -489,4 +489,16 @@ footer {
   .btn {
     padding: 2rem 5rem;
   }
+
+  footer {
+    margin-bottom: 6.4rem;
+  }
+
+  .bottom {
+    margin: 0rem 11rem 10rem 3.2rem;
+  }
+
+  .bottom p:last-child {
+    display: none;
+  }
 }
