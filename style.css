@@ -471,6 +471,14 @@ footer {
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
   }
+
+  .bottom {
+    margin: 0rem 11rem 10rem 3.2rem;
+  }
+
+  .bottom p:last-child {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 428px) {
@@ -488,5 +496,21 @@ footer {
 
   .btn {
     padding: 2rem 5rem;
+  }
+
+  footer {
+    margin-bottom: 6.4rem;
+  }
+
+  .bottom {
+    margin: 0rem 11rem 10rem 3.2rem;
+  }
+
+  .bottom p:last-child {
+    display: none;
+  }
+
+  .hero__right {
+    margin-right: -100px;
   }
 }
