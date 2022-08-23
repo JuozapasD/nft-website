@@ -479,21 +479,27 @@ footer {
   .bottom p:last-child {
     display: none;
   }
-}
 
-@media only screen and (max-width: 428px) {
   .hero {
-    grid-template-columns: repeat(6, 1fr);
-  }
-
-  .hero__left {
-    grid-column: 1 / 4;
+    display: flex;
   }
 
   .hero__right {
-    grid-column: 4 / 7;
+    overflow-x: hidden;
+    width: 35%;
   }
 
+  .hero__left {
+    width: 65%;
+    height: 56rem;
+  }
+
+  .hero__right img {
+    width: 30rem;
+  }
+}
+
+@media only screen and (max-width: 428px) {
   .btn {
     padding: 2rem 5rem;
   }
@@ -510,7 +516,21 @@ footer {
     display: none;
   }
 
+  .hero {
+    display: flex;
+  }
+
   .hero__right {
-    margin-right: -100px;
+    overflow-x: hidden;
+    width: 35%;
+  }
+
+  .hero__left {
+    width: 65%;
+    height: 56rem;
+  }
+
+  .hero__right img {
+    width: 30rem;
   }
 }
